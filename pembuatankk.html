@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembuatan Kartu Keluarga</title>
+  <link rel="stylesheet" href="css/stylelayanan.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Formulir Pembuatan Kartu Keluarga</h1>
+    <form id="kk-form" action="http://localhost/enagari/submit_kk.php" method="POST">
+      <h2 class="section-title">Data Kepala Keluarga</h2>
+      <div class="form-group">
+        <label for="nama-kepala">Nama Lengkap Kepala Keluarga:</label>
+        <input type="text" id="nama-kepala" name="nama-kepala" placeholder="Masukkan Nama Kepala Keluarga" required>
+      </div>
+      <div class="form-group">
+        <label for="nik-kepala">NIK Kepala Keluarga:</label>
+        <input type="text" id="nik-kepala" name="nik-kepala" placeholder="Masukkan NIK Kepala Keluarga" required>
+      </div>
+      <div class="form-group">
+        <label for="tempat-lahir-kepala">Tempat Lahir:</label>
+        <input type="text" id="tempat-lahir-kepala" name="tempat-lahir-kepala" placeholder="Masukkan Tempat Lahir" required>
+      </div>
+      <div class="form-group">
+        <label for="tanggal-lahir-kepala">Tanggal Lahir:</label>
+        <input type="date" id="tanggal-lahir-kepala" name="tanggal-lahir-kepala" required>
+      </div>
+      <div class="form-group">
+        <label for="jenis-kelamin-kepala">Jenis Kelamin:</label>
+        <select id="jenis-kelamin-kepala" name="jenis-kelamin-kepala" required>
+          <option value="laki-laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="agama-kepala">Agama:</label>
+        <input type="text" id="agama-kepala" name="agama-kepala" placeholder="Masukkan Agama" required>
+      </div>
+      <div class="form-group">
+        <label for="pekerjaan-kepala">Pekerjaan:</label>
+        <input type="text" id="pekerjaan-kepala" name="pekerjaan-kepala" placeholder="Masukkan Pekerjaan" required>
+      </div>
+      <div class="form-group">
+        <label for="alamat-kepala">Alamat:</label>
+        <textarea id="alamat-kepala" name="alamat-kepala" placeholder="Masukkan Alamat" required></textarea>
+      </div>
+
+      <h2 class="section-title">Data Lokasi</h2>
+      <div class="form-group">
+        <label for="kecamatan">Kecamatan:</label>
+        <input type="text" id="kecamatan" name="kecamatan" placeholder="Masukkan Kecamatan" required>
+      </div>
+      <div class="form-group">
+        <label for="provinsi">Provinsi:</label>
+        <input type="text" id="provinsi" name="provinsi" placeholder="Masukkan Provinsi" required>
+      </div>
+      <div class="form-group">
+        <label for="kabupaten">Kabupaten/Kota:</label>
+        <input type="text" id="kabupaten" name="kabupaten" placeholder="Masukkan Kabupaten/Kota" required>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn submit">✔ Simpan</button>
+        <button type="reset" class="btn cancel">✖ Batal</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

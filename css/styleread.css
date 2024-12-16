@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1A237E, #FFFFFF);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    color: #1A237E;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1A237E;
+    padding-bottom: 10px;
+  }
+  
+  /* Table Styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .data-table th {
+    background: linear-gradient(to right, #1A237E, #3F51B5);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .data-table tr {
+    transition: background-color 0.5s ease;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: rgba(63, 81, 181, 0.1); /* Halus dan konsisten */
+  }
+  
+  .data-table tr:hover {
+    background-color: #E3F2FD; /* Hover efek */
+    cursor: pointer;
+  }
+  
+  /* Highlight Row */
+  .highlight {
+    background: linear-gradient(to right, #4CAF50, #A5D6A7);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      background-color: #A5D6A7;
+    }
+    to {
+      background-color: #C8E6C9;
+    }
+  }
+  
+  /* Success Message */
+  .success-message {
+    color: #4CAF50;
+    background-color: #E8F5E9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* No Data Message */
+  .no-data-message {
+    color: #FF5252;
+    background-color: #FFEBEE;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn.update {
+    background-color: #FFC107;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .btn.update:hover {
+    background-color: #FFA000;
+    transform: translateY(-2px);
+  }
+  
+  .btn.add {
+    background-color: #00E5FF;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .btn.add:hover {
+    background-color: #00B3CC;
+    transform: translateY(-2px);
+  }
+  
+  .btn.cancel {
+    background-color: #FF5252;
+    color: #fff;
+  }
+  
+  .btn.cancel:hover {
+    background-color: #CC0000;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .data-table th, .data-table td {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .btn {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }
+  

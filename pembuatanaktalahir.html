@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembuatan Akta Kelahiran</title>
+  <link rel="stylesheet" href="css/stylelayanan.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Formulir Pembuatan Akta Kelahiran</h1>
+    <form class="akta-form" action="http://localhost/enagari/submit_akta.php" method="POST">
+      <h2 class="section-title">Data Bayi</h2>
+      <div class="form-group">
+        <label for="nama-bayi">Nama Bayi:</label>
+        <input type="text" id="nama-bayi" name="nama-bayi" placeholder="Masukkan Nama Bayi" required>
+      </div>
+      <div class="form-group">
+        <label for="jenis-kelamin-bayi">Jenis Kelamin:</label>
+        <select id="jenis-kelamin-bayi" name="jenis-kelamin-bayi" required>
+          <option value="laki-laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="tempat-lahir-bayi">Tempat Lahir:</label>
+        <input type="text" id="tempat-lahir-bayi" name="tempat-lahir-bayi" placeholder="Masukkan Tempat Lahir" required>
+      </div>
+      <div class="form-group">
+        <label for="tanggal-lahir-bayi">Tanggal Lahir:</label>
+        <input type="date" id="tanggal-lahir-bayi" name="tanggal-lahir-bayi" required>
+      </div>
+
+      <h2 class="section-title">Data Ibu</h2>
+      <div class="form-group">
+        <label for="nik-ibu">NIK Ibu:</label>
+        <input type="text" id="nik-ibu" name="nik-ibu" placeholder="Masukkan NIK Ibu" required>
+      </div>
+      <div class="form-group">
+        <label for="nama-ibu">Nama Ibu:</label>
+        <input type="text" id="nama-ibu" name="nama-ibu" placeholder="Masukkan Nama Ibu" required>
+      </div>
+      <div class="form-group">
+        <label for="tempat-lahir-ibu">Tempat Lahir Ibu:</label>
+        <input type="text" id="tempat-lahir-ibu" name="tempat-lahir-ibu" placeholder="Masukkan Tempat Lahir Ibu" required>
+      </div>
+      <div class="form-group">
+        <label for="tanggal-lahir-ibu">Tanggal Lahir Ibu:</label>
+        <input type="date" id="tanggal-lahir-ibu" name="tanggal-lahir-ibu" required>
+      </div>
+      <div class="form-group">
+        <label for="pekerjaan-ibu">Pekerjaan Ibu:</label>
+        <input type="text" id="pekerjaan-ibu" name="pekerjaan-ibu" placeholder="Masukkan Pekerjaan Ibu" required>
+      </div>
+      <div class="form-group">
+        <label for="alamat-ibu">Alamat:</label>
+        <textarea id="alamat-ibu" name="alamat-ibu" placeholder="Masukkan Alamat Ibu" required></textarea>
+      </div>
+
+      <h2 class="section-title">Data Ayah</h2>
+      <div class="form-group">
+        <label for="nik-ayah">NIK Ayah:</label>
+        <input type="text" id="nik-ayah" name="nik-ayah" placeholder="Masukkan NIK Ayah" required>
+      </div>
+      <div class="form-group">
+        <label for="nama-ayah">Nama Ayah:</label>
+        <input type="text" id="nama-ayah" name="nama-ayah" placeholder="Masukkan Nama Ayah" required>
+      </div>
+      <div class="form-group">
+        <label for="tempat-lahir-ayah">Tempat Lahir Ayah:</label>
+        <input type="text" id="tempat-lahir-ayah" name="tempat-lahir-ayah" placeholder="Masukkan Tempat Lahir Ayah" required>
+      </div>
+      <div class="form-group">
+        <label for="tanggal-lahir-ayah">Tanggal Lahir Ayah:</label>
+        <input type="date" id="tanggal-lahir-ayah" name="tanggal-lahir-ayah" required>
+      </div>
+      <div class="form-group">
+        <label for="pekerjaan-ayah">Pekerjaan Ayah:</label>
+        <input type="text" id="pekerjaan-ayah" name="pekerjaan-ayah" placeholder="Masukkan Pekerjaan Ayah" required>
+      </div>
+      <div class="form-group">
+        <label for="alamat-ayah">Alamat:</label>
+        <textarea id="alamat-ayah" name="alamat-ayah" placeholder="Masukkan Alamat Ayah" required></textarea>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn submit">✔ Simpan</button>
+        <button type="reset" class="btn cancel">✖ Batal</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
